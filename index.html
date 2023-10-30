@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tom Preston-Werner
+title: Pipeline Data Engineering Academy
 ---
 
 <div id="home">
@@ -16,9 +16,7 @@ title: Tom Preston-Werner
   <h1>Pages</h1>
   <ul>
     {% for page in site.pages %}
-      {% if page.layout == 'page' %}
         <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-      {% endif %}
     {% endfor %}
   </ul>
 
@@ -46,8 +44,4 @@ title: Tom Preston-Werner
   {% endfor %}
 </ul>
 
-  <h1>Noteworthy Open Source Projects and Specifications</h1>
-  <ul class="posts">
-    <li><a href="http://github.com/jekyll/jekyll/">Jekyll:</a> A simple, blog aware, static site generator (used for this site).</li>
-  </ul>
 </div>
