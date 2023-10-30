@@ -12,9 +12,11 @@ title: Tom Preston-Werner
   </ul>
 
   <h1>Pages</h1>
-  <ul class="pages">
+  <ul>
     {% for page in site.pages %}
-      <li><span>{{ page.date | date_to_string }}</span> &raquo; <a href="{{ page.url }}">{{ page.title }}</a></li>
+      {% if page.layout == 'page' %}
+        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+      {% endif %}
     {% endfor %}
   </ul>
 
