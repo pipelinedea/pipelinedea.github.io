@@ -5,14 +5,12 @@ title: letters
 
 <h1>Letters</h1>
 
-<div id="post">
-<ul>
+<div id="home">
+  <ul class="posts">
   {% for post in site.posts %}
     {% if post.tags contains "news" %}
-      <li>
         <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-      </li>
     {% endif %}
   {% endfor %}
-</ul>
+  </ul> 
 </div>

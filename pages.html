@@ -4,13 +4,12 @@ title: pages
 ---
 
 <h1>Pages</h1>
-<div id="post">
-<ul>
+<div id="home">
+<ul class="posts">
   {% for page in site.pages %}
     {% if page.status contains 'publish' %}
       <li><span>{{ page.date | date_to_string }}</span> &raquo; <a href="{{ page.url }}">{{ page.title }}</a></li>
     {% endif %}
   {% endfor %}
-</ul>  
-
+</ul> 
 </div>
