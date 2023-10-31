@@ -3,45 +3,16 @@ layout: default
 title: Pipeline Data Engineering Academy
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      {% unless post.tags contains "news" or post.tags contains "idataengineer" %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endunless %}   
-    {% endfor %}
-  </ul>
+We ran Pipeline Academy, the world’s first coding bootcamp focusing on data engineering, the most sophisticated and most in-demand competency in the data ecosystem.
 
-  <h1>Pages</h1>
-  <ul>
-    {% for page in site.pages %}
-        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-    {% endfor %}
-  </ul>
+If you want to become a better data engineer you will find the posts useful:
+* [Become a Data Engineer on a Shoestring (aka The Best Free Courses and Learning Resources)](https://pipelinedea.github.io/2020/12/15/become-a-data-engineer-on-a-shoestring.html)
+* [Become A Better Data Engineer On A Shoestring (More Free Resources)](https://pipelinedea.github.io/2022/02/18/learn-data-engineering-on-a-shoestring-free-courses.html)
 
-  <h1>Posts with the "news" Tag:</h1>
+Listen to our story in the Data Engineering Podcast with Tobias Macey:
+* [Data Engineering Podcast With The Data Janitor](https://pipelinedea.github.io/2020/09/23/data-engineering-podcast-pipeline-academy.html)
+* [Pipeline Academy on the Data Engineering Podcast Vol.2](https://pipelinedea.github.io/2021/06/29/pipeline-academy-on-the-data-engineering-podcast-vol2.html)
 
-<ul>
-  {% for post in site.posts %}
-    {% if post.tags contains "news" %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
-
-<h1>Posts with the "idataengineer" Tag:</h1>
-
-<ul>
-  {% for post in site.posts %}
-    {% if post.tags contains "idataengineer" %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
+Listen to the confessions several data engineers made on <a href="https://www.youtube.com/channel/UCzXd80RNUOkANQfcWYw1slg">Youtube</a>, <a href="https://open.spotify.com/show/1hkQwsooJDT7jAq22aMjIh">Spotify</a>, <a href="https://podcasts.apple.com/podcast/idataengineer/id1545671434">Apple Podcasts</a>, <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy80NGNjMjg4MC9wb2RjYXN0L3Jzcw==">Google Podcasts</a> and <a href="https://anchor.fm/dataengineeringacademy">even more platforms</a>.
 
 </div>
