@@ -7,7 +7,7 @@ title: pages
 <div id="post">
 <ul>
   {% for page in site.pages %}
-    {% if page.status = "publish" %}
+    {% if page.status = 'publish' %}
       <li><a href="{{ page.url }}">{{ page.title }}</a></li>
     {% endif %}
   {% endfor %}
