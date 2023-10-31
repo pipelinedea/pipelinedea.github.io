@@ -5,6 +5,7 @@ title: letters
 
 <h1>Letters</h1>
 
+<div id="post">
 <ul>
   {% for post in site.posts %}
     {% if post.tags contains "news" %}
@@ -14,3 +15,4 @@ title: letters
     {% endif %}
   {% endfor %}
 </ul>
+</div>
